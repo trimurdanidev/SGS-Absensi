@@ -24,7 +24,7 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/layoutHeader"
         android:layout_width="403dp"
-        android:layout_height="81dp"
+        android:layout_height="130dp"
         android:layout_marginTop="40dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,10 +51,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="50dp"
             android:layout_marginEnd="20dp"
             android:gravity="center"
-            android:text="Absensi ini membutuhkan info lokasi dan harus dilakukan jika kamu Foto Selfie ya."
+            android:text="Absensi ini membutuhkan info lokasi dan harus dilakukan dengan kamu Foto Selfie ya."
             android:textColor="@color/black"
             android:textSize="16sp" />
 
@@ -260,7 +260,7 @@
                         android:layout_gravity="center"
                         android:layout_marginStart="20dp"
                         android:layout_weight="1"
-                        android:text="Riwayat\nAbsen Anda"
+                        android:text="History\nAbsen Anda"
                         android:textColor="@color/white"
                         android:textSize="24sp"
                         android:textStyle="bold" />

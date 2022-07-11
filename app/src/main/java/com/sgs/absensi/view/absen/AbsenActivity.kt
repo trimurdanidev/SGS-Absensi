@@ -382,7 +382,7 @@ class AbsenActivity : AppCompatActivity() {
                     strKeterangan,
                     strTitlemenu2)
                 Toast.makeText(this@AbsenActivity,
-                    "Laporan Anda Tersimpan, Silahkan anda cek pada menu Riwayat Absen Anda", Toast.LENGTH_SHORT).show()
+                    "Laporan Anda Tersimpan, Silahkan anda cek pada menu History Absen Anda", Toast.LENGTH_SHORT).show()
                 finish()
             }
         }

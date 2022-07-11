@@ -81,6 +81,7 @@ class LoginActivity : AppCompatActivity() {
                 inputPassword.requestFocus()
             } else {
                 //Start ProgressBar first (Set visibility VISIBLE)
+
                 val handler = Handler(Looper.getMainLooper())
                 handler.post(Runnable {
                     //Starting Write and Read data with URL
@@ -118,6 +119,7 @@ class LoginActivity : AppCompatActivity() {
                                     Toast.LENGTH_SHORT
                                 ).show()
                             }else{
+                                toggleProgressDialog(true)
 //                                Toast.makeText(this@LoginActivity, strID, Toast.LENGTH_SHORT).show()
                                 Toast.makeText(this@LoginActivity, "Berhasil Masuk", Toast.LENGTH_SHORT).show()
                                 val intent = Intent(applicationContext, MainActivity::class.java);
@@ -156,7 +158,15 @@ class LoginActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
     }
 
-
+    fun toggleProgressDialog(show: Boolean) {
+        runOnUiThread {
+            if (show) {
+                loading = ProgressDialog.show(this, "", "Masuk...", true);
+            } else {
+                loading?.dismiss();
+            }
+        }
+    }
 
 }
 
